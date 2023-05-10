@@ -8,7 +8,7 @@ if [[ ! -e $INIT_LUA && ! -e $INIT_VIM ]]; then
     return
 fi
 
-alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim-lazy="NVIM_APPNAME=lazy nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
 
 function nvims() {
