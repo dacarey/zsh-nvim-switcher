@@ -7,6 +7,7 @@ if [[ ! -e $INIT_LUA && ! -e $INIT_VIM ]]; then
     echo "Error: Neither init.lua nor init.vim found in $NVIM_CONFIG_DIR" 
     return
 fi
+echo "==> PLUGIN loaded zsh-nvim-switcher"
 
 alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
@@ -21,6 +22,7 @@ function nvims() {
     config=""
   fi
   NVIM_APPNAME=$config nvim $@
+  echo NVIM_APPNAME=$config nvim $@
 }
 
 bindkey -s ^a "nvims\n"
