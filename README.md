@@ -1,5 +1,5 @@
 # zsh-nvim-switcher
-A zsh plugin to manage switching of neovim distribtions
+A zsh plugin to manage switching of neovim distributions,  such as [LazyVim](https://www.lazyvim.org/),   [kickstart](https://github.com/nvim-lua/kickstart.nvim) as well as a plain old roll your own configuration.
 
 ## Install
 Using the [:zap: Zap](https://www.zapzsh.org/) minimal zsh plugin manager, add the following to your `.zshrc`
@@ -11,9 +11,6 @@ plug "dacarey/zsh-nvim-switcher"
 
 ## Prerequisite Checks
 A check will be performed to verify that a default neovim configuration is present.
-
-- [`starship`](https://starship.rs/) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-
 
 ## Kudos
 This plugin is entirely based on Elijah Manor's [.zshrc](https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b) file and his excellent associated [Neovim Config Switcher - YouTube video](https://youtu.be/LkHjJlSgKZY).
