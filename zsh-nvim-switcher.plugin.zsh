@@ -9,6 +9,14 @@ if [[ ! -e $INIT_LUA && ! -e $INIT_VIM ]]; then
 fi
 echo "==> PLUGIN loaded zsh-nvim-switcher"
 
+if [ -f ~/.local/bin/nvim.appimage ]; then  # use bleeding edge neovim if available
+  alias nvim="~/.local/nvim/nvim.appimage"
+  echo '==> NVIM is configured to use appimage installation'
+fi
+if command -v nvim >/dev/null 2>&1; then
+  alias vim=nvim
+fi
+
 alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
 
