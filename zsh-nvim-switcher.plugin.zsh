@@ -10,7 +10,7 @@ fi
 echo "==> PLUGIN loaded zsh-nvim-switcher"
 
 if [ -f ~/.local/bin/nvim.appimage ]; then  # use bleeding edge neovim if available
-  alias nvim="~/.local/nvim/nvim.appimage"
+  alias nvim="~/.local/bin/nvim.appimage"
   echo '==> NVIM is configured to use appimage installation'
 fi
 if command -v nvim >/dev/null 2>&1; then
