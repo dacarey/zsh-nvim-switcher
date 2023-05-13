@@ -17,11 +17,11 @@ if command -v nvim >/dev/null 2>&1; then
   alias vim=nvim
 fi
 
-alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim-lazy="NVIM_APPNAME=lazyvim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
 
 function nvims() {
-  items=("default" "kickstart" "LazyVim" )
+  items=("default" "kickstart" "lazyvim" )
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
