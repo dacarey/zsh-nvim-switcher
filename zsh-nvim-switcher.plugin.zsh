@@ -2,6 +2,7 @@
 NVIM_CONFIG_DIR="$HOME/.config/nvim"
 INIT_LUA="$NVIM_CONFIG_DIR/init.lua"
 INIT_VIM="$NVIM_CONFIG_DIR/init.vim"
+#
 
 if [[ ! -e $INIT_LUA && ! -e $INIT_VIM ]]; then
     echo "Error: Neither init.lua nor init.vim found in $NVIM_CONFIG_DIR" 
@@ -9,16 +10,14 @@ if [[ ! -e $INIT_LUA && ! -e $INIT_VIM ]]; then
 fi
 echo "==> PLUGIN loaded zsh-nvim-switcher"
 
-if [ -f ~/.local/bin/nvim.appimage ]; then  # use bleeding edge neovim if available
-  alias nvim="~/.local/bin/nvim.appimage"
-  echo '==> NVIM is configured to use appimage installation'
-fi
 if command -v nvim >/dev/null 2>&1; then
-  alias vim=nvim
+  echo "==> NVIM is configured to use `which nvim`.  NVIM_APPNAME is set to ==> '$NVIM_APPNAME'"
 fi
 
 alias nvim-lazy="NVIM_APPNAME=lazyvim nvim"
+alias nviml="NVIM_APPNAME=lazyvim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
+alias nvimk="NVIM_APPNAME=kickstart nvim"
 
 function nvims() {
   items=("default" "kickstart" "lazyvim" )
