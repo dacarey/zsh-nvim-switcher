@@ -8,10 +8,11 @@ if [[ ! -e $INIT_LUA && ! -e $INIT_VIM ]]; then
     echo "Error: Neither init.lua nor init.vim found in $NVIM_CONFIG_DIR" 
     return
 fi
-echo "==> PLUGIN loaded zsh-nvim-switcher"
+echo "==> ZAP PLUGIN loading - zsh-nvim-switcher"
 
 if command -v nvim >/dev/null 2>&1; then
-  echo "==> NVIM is configured to use `which nvim`.  NVIM_APPNAME is set to ==> '$NVIM_APPNAME'"
+  echo "    -- NVIM is configured to use `which nvim`.  NVIM_APPNAME is set to ==> '$NVIM_APPNAME'"
+  echo "    -- NVIM_APPNAME is set to ==> '$NVIM_APPNAME'"
 fi
 
 alias nvim-lazy="NVIM_APPNAME=lazyvim nvim"

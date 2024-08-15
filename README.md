@@ -2,7 +2,7 @@
 A zsh plugin to manage switching of neovim distributions,  such as [LazyVim](https://www.lazyvim.org/),   [kickstart](https://github.com/nvim-lua/kickstart.nvim) as well as a plain old roll your own configuration.
 
 ## Install
-Using the [:zap: Zap](https://www.zapzsh.org/) minimal zsh plugin manager, add the following to your `.zshrc`
+Using the [:zap: Zap](https://github.com/zap-zsh/zap) minimal zsh plugin manager, add the following to your `.zshrc`
 
 ```sh
 # Install plugin
