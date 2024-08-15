@@ -11,7 +11,7 @@ fi
 echo "==> ZAP PLUGIN loading - zsh-nvim-switcher"
 
 if command -v nvim >/dev/null 2>&1; then
-  echo "    -- NVIM is configured to use `which nvim`.  NVIM_APPNAME is set to ==> '$NVIM_APPNAME'"
+  echo "    -- NVIM is configured to use `which nvim`."
   echo "    -- NVIM_APPNAME is set to ==> '$NVIM_APPNAME'"
 fi
 
